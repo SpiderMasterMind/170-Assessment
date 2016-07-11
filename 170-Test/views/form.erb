@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>"Form"</title>
+  </head>
+
+  <body>
+
+<form action="payments/create" method="POST">
+  <p>
+    <label>First name:
+      <input type="text" name="firstname" value="<%== session[:user][:firstname]%>">
+    </label>
+  </p>
+  <p>
+    <label>Last name:
+      <input type="text" name="lastname" value="<%== session[:user][:lastname]%>"/>
+    </label>
+  </p>
+  <p>
+    <label>Card number: 
+      <input type="text" name="cardnumber" value="<%== session[:user][:cardnumber]%>"/>
+    </label>
+  </p>
+  <p>
+    <label>Expiration Date:
+      <input type="text" name="expiry" value="<%== session[:user][:expiry]%>"/>
+    </label>
+  </p>
+  <p>
+    <label>CCV:
+      <input type="text" name="ccv" value="<%== session[:user][:ccv]%>"/>
+    </label>
+  </p>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+
+</html>

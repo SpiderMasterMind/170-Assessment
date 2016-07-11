@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>"Success!"</title>
+  </head>
+
+  <body>
+    <p> </p>
+    <table>
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Created</th>
+        <th>Card Number</th>
+        <th>Expiration Date</th>
+      </tr>
+      </thead>
+    <tbody>
+
+      <% session[:success].each do |details| %>
+        <%== get_html(details) %>
+      <% end %>
+        
+         
+
+      <tr>
+      </tr>
+    </tbody>
+    </table>
+    </body>
